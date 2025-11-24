@@ -1,4 +1,4 @@
-/// essa classe aqui pega tudo e obriga os outro a usar ela lembra !!!!
+/// essa atros aqui pega tudo e obriga os outro a usar ela lembra de estudar
 
 abstract class FiguraGeometrica {
   abstract calcularArea(): number;
