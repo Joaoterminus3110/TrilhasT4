@@ -1,5 +1,5 @@
 
-abstract class TaskManager {
+abstract class TaskManager2 {
   protected tasks: Set<string> = new Set();
 
   abstract addTask(task: string): void;
@@ -7,7 +7,7 @@ abstract class TaskManager {
 }
 
 
-class Project extends TaskManager {
+class Project2 extends TaskManager2 {
   private nomeProjeto: string;
 
   constructor(nomeProjeto: string) {
@@ -30,7 +30,7 @@ class Project extends TaskManager {
 }
 
 
-class DailyTasks extends TaskManager {
+class DailyTasks2 extends TaskManager2{
   private data: string;
 
   constructor(data: string) {

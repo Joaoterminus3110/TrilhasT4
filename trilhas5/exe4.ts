@@ -1,5 +1,5 @@
 
-abstract class VoteSystem {
+abstract class VoteSystem2 {
   protected votes: Record<string, number> = {};
 
   abstract voteFor(candidate: string): void;
@@ -7,7 +7,7 @@ abstract class VoteSystem {
 }
 
 
-class Election extends VoteSystem {
+class Election2 extends VoteSystem2 {
   voteFor(candidate: string): void {
     if (this.votes[candidate]) {
       this.votes[candidate]++;
@@ -22,7 +22,7 @@ class Election extends VoteSystem {
 }
 
 
-class Poll extends VoteSystem {
+class Poll2 extends VoteSystem2 {
   voteFor(candidate: string): void {
     if (this.votes[candidate]) {
       this.votes[candidate]++;
